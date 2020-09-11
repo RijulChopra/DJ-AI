@@ -43,6 +43,15 @@ function draw()
         document.getElementById('song_name').innerHTML = "Song Name : Believer";
         song2.stop();
     }
+
+    if(scoreRightWrist > 0.2)
+    {
+        circle(rightWristX, rightWristY, 20);
+        song2.play();
+        song2.setVolume(10);
+        document.getElementById('song_name').innerHTML = "Song Name : Best Song Ever";
+        song.stop();
+    }
 }
 
 function modelLoaded()
